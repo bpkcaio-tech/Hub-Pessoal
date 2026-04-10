@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Teste HUB</title>
+</head>
+<body>
+  <h1>Teste do HUB Pessoal</h1>
+  <p>Se você consegue ver esta página, o arquivo principal foi criado corretamente.</p>
+  <p>Para testar o HUB completo, abra o arquivo <strong>hub.html</strong> no seu navegador.</p>
+
+  <script>
+    // Teste simples do localStorage
+    try {
+      localStorage.setItem('teste', 'funcionando');
+      const teste = localStorage.getItem('teste');
+      console.log('localStorage funcionando:', teste);
+      localStorage.removeItem('teste');
+    } catch (e) {
+      console.error('Erro no localStorage:', e);
+    }
+  </script>
+</body>
+</html>
